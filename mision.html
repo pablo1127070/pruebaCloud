@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Declara que el documento está escrito en HTML5 y que el idioma principal es español. -->
+<head>
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres del documento como UTF-8, lo cual es necesario para representar caracteres especiales y acentos correctamente. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la página para que sea responsive, ajustándose al ancho de la pantalla del dispositivo. Esto es esencial para la usabilidad en dispositivos móviles. -->
+    <title>Misión - Empresa de Soluciones Tecnológicas</title> <!-- Título de la página que aparece en la pestaña del navegador y en los resultados de búsqueda. -->
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="icon" href="images.jpeg"> <!-- Vincula una hoja de estilo externa llamada "styles1.css" para dar formato y estilo al contenido del HTML. -->
+</head>
+<body>
+    <!-- Encabezado del sitio web que contiene el logo, el título y la barra de navegación -->
+    <header>
+        <div class="logo-titulo"> <!-- Contenedor para el logo y el título del sitio web -->
+            <img id="icono1" src="https://i.pinimg.com/236x/e7/6d/79/e76d79bd376511fe18efb8d9ac83a38d.jpg" alt="Soluciones"> <!-- Muestra un logo o icono del sitio web. El atributo "alt" proporciona texto alternativo para mejorar la accesibilidad. -->
+            <h1 id="superior">EL gymrat</h1> <!-- Título principal del sitio web, estilizado usando el identificador "superior". -->
+        </div>
+        <!-- Barra de navegación principal del sitio web -->
+        <nav class="navbar">  
+            <ul class="menu"> <!-- Lista no ordenada que contiene los elementos del menú de navegación. -->
+                <li><a href="/index.html">Inicio</a></li> <!-- Enlace a la página de inicio. -->
+                <!-- Elemento del menú con un submenú (dropup) para la sección "Nosotros" -->
+                <li class="dropup"> 
+                    <button class="dropbtn">Nosotros</button> <!-- Botón que al pasar el ratón o hacer clic, muestra el submenú. -->
+                    <div class="dropup-content"> <!-- Contenedor para los enlaces del submenú. -->
+                        <a href="mision.html">rutinas</a> <!-- Enlace a la página de Misión. -->
+                        <a href="vision.html">dietas</a> <!-- Enlace a la página de Visión. -->
+                        <a href="prinicipios.html">consejos</a> <!-- Enlace a la página de Principios. -->
+                    </div>
+                </li>
+                <li><a href="#">Servicios</a></li> <!-- Enlace a la página de Servicios (aún no especificada). -->
+                <li><a href="#">Contactos</a></li> <!-- Enlace a la página de Contactos (aún no especificada). -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenedor principal para la sección de misión y galería de imágenes -->
+    <div class="container">
+        <!-- Sección de texto explicativo sobre la misión de la empresa -->
+        <div class="mission-text">
+            <h1>Nuestra Misión</h1> <!-- Título principal de la sección de misión. -->
+            <p>
+                Forjar disciplina física y mental mediante entrenamientos basados en ciencia,
+                 combinando fuerza, resistencia y autocontrol. A través de cada rutina, se busca desarrollar tanto el cuerpo como el carácter, siguiendo principios de constancia y superación personal día tras día.
+            </p> <!-- Descripción detallada de la misión de la empresa. -->
+        </div>
+
+        <!-- Galería de imágenes con un carrusel de control de radio -->
+        <div class="image-gallery">
+            <!-- Botones de radio para controlar manualmente la galería de imágenes -->
+            <input type="radio" name="slider" id="slide1" checked> <!-- Primer botón de radio, activado por defecto para mostrar la primera imagen. -->
+            <input type="radio" name="slider" id="slide2"> <!-- Segundo botón de radio para la segunda imagen. -->
+            <input type="radio" name="slider" id="slide3"> <!-- Tercer botón de radio para la tercera imagen. -->
+
+            <div class="slides"> <!-- Contenedor de todas las diapositivas de la galería. -->
+                <!-- Primera diapositiva de la galería -->
+                <div class="slide">
+                    <img src="https://cms.rootstack.com/sites/default/files/inline-images/Captura%20de%20pantalla%202023-08-25%20a%20la%28s%29%2021.53.00.jpg" alt="Imagen 1"> <!-- Imagen de la primera diapositiva, con un enlace absoluto a la imagen en línea. -->
+                </div>
+                <!-- Segunda diapositiva de la galería -->
+                <div class="slide">
+                    <img src="https://cms.rootstack.com/sites/default/files/inline-images/Captura%20de%20pantalla%202023-08-25%20a%20la%28s%29%2021.52.41.jpg" alt="Imagen 2"> <!-- Imagen de la segunda diapositiva, con un enlace absoluto a la imagen en línea. -->
+                </div>
+                <!-- Tercera diapositiva de la galería -->
+                <div class="slide">
+                    <img src="https://investpacific.org/wp-content/uploads/desarrollo-y-operaciones-ti-header.jpg" alt="Imagen 3"> <!-- Imagen de la tercera diapositiva, con un enlace absoluto a la imagen en línea. -->
+                </div>
+            </div>
+
+            <!-- Controles de navegación manual del slider, permiten al usuario seleccionar manualmente una diapositiva -->
+            <div class="navigation">
+                <label for="slide1"></label> <!-- Botón manual que selecciona la primera imagen de la galería. -->
+                <label for="slide2"></label> <!-- Botón manual que selecciona la segunda imagen de la galería. -->
+                <label for="slide3"></label> <!-- Botón manual que selecciona la tercera imagen de la galería. -->
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 >Rutinas de Entrenamiento</h1>
+        
+
+        <div class="routine">
+            
+            <h2>Rutina de Pecho</h2>
+            <ul>
+                <li>Press de banca plano con barra – 4 series de 6-8 repeticiones</li>
+                <li>Press inclinado con mancuernas – 4 series de 8-10 repeticiones</li>
+                <li>Fondos en paralelas – 3 series de 10-12 repeticiones</li>
+                <li>Aperturas con mancuernas en banco inclinado – 3 series de 10-12 repeticiones</li>
+                <li>Press de pecho en máquina – 3 series de 12-15 repeticiones</li>
+            </ul>
+        </div>
+        <br>
+
+        <div class="routine">
+            <h2>Rutina de Piernas</h2>
+            <ul>
+                <li>Sentadillas con barra – 4 series de 6-8 repeticiones</li>
+                <li>Peso muerto rumano con barra – 4 series de 8-10 repeticiones</li>
+                <li>Prensa de piernas – 3 series de 10-12 repeticiones</li>
+                <li>Zancadas caminando con mancuernas – 3 series de 10-12 repeticiones por pierna</li>
+                <li>Extensiones de cuádriceps en máquina – 3 series de 12-15 repeticiones</li>
+                <li>Curl femoral en máquina – 3 series de 12-15 repeticiones</li>
+            </ul>
+        </div>
+        <br>
+
+        <div class="routine">
+            <h2>Rutina de Espalda</h2>
+            <ul>
+                <li>Dominadas lastradas – 4 series de 6-8 repeticiones</li>
+                <li>Remo con barra – 4 series de 8-10 repeticiones</li>
+                <li>Peso muerto convencional – 3 series de 5-6 repeticiones</li>
+                <li>Remo en máquina – 3 series de 10-12 repeticiones</li>
+                <li>Pullover en polea – 3 series de 12-15 repeticiones</li>
+            </ul>
+        </div>
+        
+
+        <div class="routine">
+            <h2>Rutina de Brazos</h2>
+            <ul>
+                <li>Curl con barra – 4 series de 8-10 repeticiones</li>
+                <li>Press francés con barra – 4 series de 8-10 repeticiones</li>
+                <li>Curl martillo con mancuernas – 3 series de 10-12 repeticiones</li>
+                <li>Fondos en paralelas – 3 series de 10-12 repeticiones</li>
+                <li>Extensión de tríceps en polea alta – 3 series de 12-15 repeticiones</li>
+                <li>Curl concentrado con mancuerna – 3 series de 12-15 repeticiones</li>
+            </ul>
+        </div>
+    </div>
+    <footer class="content">
+        <p>Mi proyecto. Todos los derechos reservados.</p> <!-- Información de derechos reservados en el pie de página. -->
+    </footer>
+
+</body>
+</html>

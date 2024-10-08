@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Declara que el documento es HTML5 y está en español. -->
+<head>
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 para soportar caracteres especiales. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la página para ser responsive, adaptándose al ancho de la pantalla del dispositivo. -->
+    <title>Visión - Empresa de Soluciones Tecnológicas</title> <!-- Título de la página que se muestra en la pestaña del navegador y en los resultados de búsqueda. -->
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="icon" href="images.jpeg"> <!-- Vincula la hoja de estilos CSS externa llamada "styles2.css" para dar formato y estilo al contenido de la página. -->
+</head>
+<body>
+    <!-- Encabezado del sitio web que contiene el logo, el título de la empresa y la barra de navegación. -->
+    <header>
+        <div class="logo-titulo"> <!-- Contenedor para el logo y el título del sitio web. -->
+            <img id="icono1" src="https://i.pinimg.com/236x/e7/6d/79/e76d79bd376511fe18efb8d9ac83a38d.jpg" alt="Soluciones"> <!-- Logo o icono de la empresa con texto alternativo para accesibilidad. -->
+            <h1 id="superior">El gymrat</h1> <!-- Título principal del sitio web con un identificador para el estilo. -->
+        </div>
+        <!-- Barra de navegación principal del sitio web. -->
+        <nav class="navbar">  
+            <ul class="menu"> <!-- Lista no ordenada que contiene los elementos del menú de navegación. -->
+                <li><a href="/index.html">Inicio</a></li> <!-- Enlace a la página de inicio. -->
+                <!-- Elemento del menú con un submenú desplegable (dropup) para la sección "Nosotros". -->
+                <li class="dropup">
+                    <button class="dropbtn">Nosotros</button> <!-- Botón para mostrar el submenú cuando se pasa el ratón o se hace clic. -->
+                    <div class="dropup-content"> <!-- Contenedor del submenú con enlaces adicionales. -->
+                        <a href="mision.html">rutinas</a> <!-- Enlace a la página de Misión. -->
+                        <a href="vision.html">dietas</a> <!-- Enlace a la página de Visión. -->
+                        <a href="prinicipios.html">consejos</a> <!-- Enlace a la página de Principios. -->
+                    </div>
+                </li>
+                <li><a href="#">Servicios</a></li> <!-- Enlace a la página de Servicios (sin especificar). -->
+                <li><a href="#">Contactos</a></li> <!-- Enlace a la página de Contactos (sin especificar). -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenedor principal para la sección de visión y la galería de imágenes. -->
+    <div class="container">
+        
+        <!-- Sección de texto explicativo sobre la visión de la empresa. -->
+        <div class="vision-text">
+            <h1>Nuestra Visión</h1> <!-- Título principal de la sección de visión. -->
+            <p>
+                Convertirnos en una fuente confiable y accesible de rutinas de entrenamiento basadas en ciencia, 
+                fomentando el desarrollo físico y mental. Queremos inspirar a las personas a alcanzar su máximo potencial a través de la disciplina, la constancia y el conocimiento, promoviendo un estilo de vida saludable y equilibrado que fortalezca tanto el cuerpo como el carácter."
+                Esta visión resalta la importancia de la ciencia detrás de las rutinas, el equilibrio entre cuerpo y mente, y el compromiso con un estilo de vida saludable.
+            </p> <!-- Descripción detallada de la visión de la empresa. -->
+        </div>
+
+        <!-- Galería de imágenes con un carrusel controlado por botones de radio. -->
+        <div class="image-gallery">
+            <!-- Botones de radio para controlar la galería -->
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+    
+            <!-- Contenedor de las diapositivas -->
+            <div class="slides">
+                <!-- Diapositiva 1 -->
+                <div class="slide">
+                    <img src="cloudV2/fondogris.jpg" alt="Imagen 1">
+                </div>
+                <!-- Diapositiva 2 -->
+                <div class="slide">
+                    <img src="cloudV2/capucha.jpg" alt="Imagen 2">
+                </div>
+                <!-- Diapositiva 3 -->
+                <div class="slide">
+                    <img src="cloudV2/arnoldViga.jpg" alt="Imagen 3">
+                </div>
+            </div>
+    
+            <!-- Indicadores de las diapositivas -->
+            <div class="nav">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+            </div>
+        </div>
+
+            <!-- Controles de navegación manual del slider, permiten al usuario seleccionar manualmente una diapositiva. -->
+            <div class="navigation">
+                <label for="slide1"></label> <!-- Botón manual que selecciona la primera imagen de la galería. -->
+                <label for="slide2"></label> <!-- Botón manual que selecciona la segunda imagen de la galería. -->
+                <label for="slide3"></label> <!-- Botón manual que selecciona la tercera imagen de la galería. -->
+            </div>
+        </div>
+    </div>
+    <div class="contain">
+        <h1>Consejos de Dieta</h1>
+
+        <div class="diet-tips">
+            <h2>1. Hidratación Adecuada</h2>
+            <ul>
+                <li>Bebe suficiente agua durante el día para mantenerte hidratado.</li>
+            </ul>
+        </div>
+
+        <div class="diet-tips">
+            <h2>2. Comer Más Vegetales</h2>
+            <ul>
+                <li>Incorpora una variedad de vegetales en cada comida.</li>
+            </ul>
+        </div>
+
+        <div class="diet-tips">
+            <h2>3. Elegir Proteínas Magras</h2>
+            <ul>
+                <li>Opta por proteínas magras como pollo, pescado, legumbres y tofu.</li>
+            </ul>
+        </div>
+
+        <div class="diet-tips">
+            <h2>4. Controlar las Porciones</h2>
+            <ul>
+                <li>Mantén un tamaño de porción adecuado para evitar el exceso de calorías.</li>
+            </ul>
+        </div>
+
+        <div class="diet-tips">
+            <h2>5. Reducir el Azúcar y los Procesados</h2>
+            <ul>
+                <li>Minimiza el consumo de azúcares añadidos y alimentos procesados.</li>
+            </ul>
+        </div>
+
+        <div class="diet-tips">
+            <h2>6. Incluir Grasas Saludables</h2>
+            <ul>
+                <li>Consume grasas saludables provenientes de aguacates, nueces, semillas y aceite de oliva.</li>
+            </ul>
+        </div>
+
+        <div class="diet-tips">
+            <h2>7. Planificación de Comidas</h2>
+            <ul>
+                <li>Planifica tus comidas con antelación para asegurar una ingesta balanceada de nutrientes.</li>
+            </ul>
+        </div>
+
+        <div class="diet-tips">
+            <h2>8. Comer con Atención</h2>
+            <ul>
+                <li>Practica el comer consciente, prestando atención a los sabores y señales de hambre.</li>
+            </ul>
+        </div>
+    </div>
+    <footer class="content">
+        <p>Mi proyecto. Todos los derechos reservados.</p> <!-- Información de derechos reservados en el pie de página. -->
+    </footer>
+
+</body>
+</html>

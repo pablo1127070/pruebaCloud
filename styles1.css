@@ -1,0 +1,226 @@
+body {
+    background-color: #2a1c36;
+
+    font-family: Arial, sans-serif;
+    
+    
+    
+
+}
+
+header {
+    background: linear-gradient(rgb(94, 32, 175) rgb(228, 93, 15)); /* Color de fondo azul */
+    color: white;
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#superior {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    
+}
+
+#icono1 {
+    max-width: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: white;
+    transform: scale(1.1);
+    border-radius: 4px;
+    color: black;
+}
+
+.navbar ul li a.active {
+    background-color: #04AA6D;
+    border-radius: 4px;
+}
+
+.dropbtn {
+    background-color: rgb(89, 28, 104);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropup {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
+
+.dropup-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(78, 23, 80);
+    min-width: 160px;
+}
+
+.dropup-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropup-content a:hover {
+    background-color: #ccc;
+}
+
+.dropup:hover .dropup-content {
+    display: block;
+}
+
+.dropup:hover .dropbtn {
+    background-color: #2980B9;
+}
+
+/* Estilos de la galería y la misión */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.image-gallery {
+
+    padding-top: 5%;
+    width: 45%; /* 45% del ancho para la galería */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+    padding: 100px;
+    
+}
+
+
+
+
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.slide img:hover {
+    transform: scale(1.05); /* Animación de escala */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra al hacer hover */
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#slide1:checked ~ .slides {
+    transform: translateX(0%);
+}
+
+#slide2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides {
+    transform: translateX(-200%);
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.navigation label {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #00aaff
+    ;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #00aaff;
+}
+
+.mission-text {
+    width: 400px;
+    height: 100%; /* 45% del ancho para el texto */
+    padding: 15px;
+
+    background-color: rgba(27, 98, 179, 0.5);
+    box-shadow: 0 4px 10px rgba(12, 178, 229, 0.1); /* Sombra alrededor del texto */
+    border-radius: 10px;
+}
+
+.mission-text h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #f8f8f8;
+}
+
+.mission-text p {
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+.container{
+    color: white;
+    padding: 20px;
+    display: block;
+    
+
+}
+.routine{
+    display: 100%;
+}
+.content{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}

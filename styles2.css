@@ -1,0 +1,262 @@
+
+/* Estilo general del cuerpo */
+body {
+    background-color: #2a1c36;
+    font-family: Arial, sans-serif; /* Tipo de fuente */
+    margin: 0; /* Sin márgenes */
+    padding: 0; /* Sin relleno */
+     /* Fondo blanco */
+}
+
+/* Estilo del encabezado */
+header {
+    /* Color de fondo azul */
+    color: white; /* Color del texto */
+    padding: 15px 20px; /* Relleno del encabezado */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra del encabezado */
+    display: flex; /* Uso de flexbox para alinear elementos */
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center; /* Alineación vertical de los elementos */
+}
+
+/* Estilo del título principal */
+#superior {
+    font-size: 1.5rem; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    margin-left: 10px; /* Margen a la izquierda */
+    display: flex; /* Flexbox para alinear íconos y texto */
+    align-items: center; /* Alineación vertical de los elementos */
+}
+
+/* Estilo del contenedor del logo y título */
+.logo-titulo {
+    display: flex; /* Flexbox para alinear logo y título */
+    align-items: center; /* Alineación vertical de los elementos */
+}
+
+/* Estilo del ícono del logo */
+#icono1 {
+    max-width: 50px; /* Ancho máximo del ícono */
+    border-radius: 50%; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra del ícono */
+}
+
+/* Estilo de la barra de navegación */
+.navbar {
+    background-color: transparent; /* Fondo transparente */
+}
+
+/* Estilo de la lista de la barra de navegación */
+.navbar ul {
+    list-style-type: none; /* Sin viñetas */
+    margin: 0; /* Sin márgenes */
+    padding: 0; /* Sin relleno */
+    display: flex; /* Flexbox para alinear elementos */
+    justify-content: flex-end; /* Alineación a la derecha */
+}
+
+/* Estilo de los enlaces en la barra de navegación */
+.navbar ul li a {
+    display: block; /* Mostrar como bloque */
+    color: white; /* Color del texto */
+    text-align: center; /* Alineación central del texto */
+    padding: 14px 20px; /* Relleno de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+/* Estilo al pasar el ratón sobre los enlaces */
+.navbar ul li a:hover {
+    background-color: white; /* Fondo blanco al pasar el ratón */
+    transform: scale(1.1); /* Aumentar tamaño al pasar el ratón */
+    border-radius: 4px; /* Bordes redondeados */
+    color: black; /* Color del texto al pasar el ratón */
+}
+
+/* Estilo para el enlace activo */
+.navbar ul li a.active {
+    background-color: #04AA6D; /* Color de fondo para el enlace activo */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Estilo del botón desplegable */
+.dropbtn {
+    background-color: rgb(32, 93, 203); /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 16px; /* Relleno del botón */
+    font-size: 16px; /* Tamaño de fuente del botón */
+    border: none; /* Sin borde */
+}
+
+/* Estilo del contenedor del menú desplegable */
+.dropup {
+    position: relative; /* Posicionamiento relativo para el menú desplegable */
+    display: inline-block; /* Mostrar en línea */
+    z-index: 2; /* Asegurar que esté por encima de otros elementos */
+}
+
+/* Estilo del contenido del menú desplegable */
+.dropup-content {
+    display: none; /* Oculto por defecto */
+    position: absolute; /* Posición absoluta */
+    background-color: rgb(32, 93, 203); /* Color de fondo del menú */
+    min-width: 160px; /* Ancho mínimo del menú */
+}
+
+/* Estilo de los enlaces en el menú desplegable */
+.dropup-content a {
+    color: black; /* Color del texto */
+    padding: 12px 16px; /* Relleno de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    display: block; /* Mostrar como bloque */
+}
+
+/* Estilo al pasar el ratón sobre los enlaces del menú desplegable */
+.dropup-content a:hover {
+    background-color: #ccc; /* Fondo gris al pasar el ratón */
+}
+
+/* Mostrar el contenido del menú desplegable al pasar el ratón */
+.dropup:hover .dropup-content {
+    display: block; /* Mostrar menú */
+}
+
+/* Estilo del botón al pasar el ratón */
+.dropup:hover .dropbtn {
+    background-color: #2980B9; /* Cambiar color de fondo del botón al pasar el ratón */
+}
+
+/* Estilo del contenedor principal */
+.container {
+    
+    
+    
+    display: flex; /* Uso de flexbox para alinear elementos */
+    justify-content: space-between; /* Espacio entre elementos */
+    padding: 100px; 
+    text-align: center;/* Relleno del contenedor */
+    /* Fondo blanco */
+    flex-direction: row-reverse; /* Intercambia de lado el texto y la galería */
+}
+.contain{
+    color: white;
+    margin: 35px;
+    padding: 10px;
+}
+
+/* Estilo de la galería de imágenes */
+.image-gallery {
+    border-radius: 15px;
+    padding: 0;
+    margin: 0px;
+    width: auto;
+ /* Relleno superior */
+     /* Ancho de la galería */
+    overflow: hidden; /* Ocultar desbordamiento */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilo de los slides de la galería */
+.slides {
+    display: flex; /* Uso de flexbox para alinear slides */
+    transition: transform 0.8s ease-in-out; /* Transición suave al cambiar slides */
+}
+
+/* Estilo de cada slide */
+.slide {
+    width: 75%; /* Ancho completo */
+    flex-shrink: 0;
+    padding: 50px; 
+    /* No permitir que se reduzca el tamaño */
+}
+
+/* Estilo de las imágenes en los slides */
+.slide img {
+    width: 200px; /* Ancho completo */
+    height: 200px; /* Altura automática */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+/* Estilo al pasar el ratón sobre las imágenes */
+.slide img:hover {
+    transform: scale(1.05); /* Aumentar tamaño al pasar el ratón */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra al pasar el ratón */
+}
+
+/* Ocultar los botones de radio */
+input[type="radio"] {
+    display: none; /* Ocultar los botones de radio */
+}
+
+/* Estilo para el primer slide */
+#slide1:checked ~ .slides {
+    transform: translateX(0%); /* Mostrar primer slide */
+}
+
+/* Estilo para el segundo slide */
+#slide2:checked ~ .slides {
+    transform: translateX(-100%); /* Mostrar segundo slide */
+}
+
+/* Estilo para el tercer slide */
+#slide3:checked ~ .slides {
+    transform: translateX(-200%); /* Mostrar tercer slide */
+}
+
+/* Estilo de la navegación entre slides */
+.navigation {
+    display: flex; /* Uso de flexbox para alinear los indicadores */
+    justify-content: center; /* Centrar los indicadores */
+    margin-top: 10px; /* Margen superior */
+}
+
+/* Estilo de cada indicador */
+.navigation label {
+    width: 15px; /* Ancho del indicador */
+    height: 15px; /* Altura del indicador */
+    margin: 0 5px; /* Margen lateral */
+    border-radius: 50%; /* Bordes redondeados */
+    background-color: #00aaff; /* Color de fondo del indicador */
+    cursor: pointer; /* Cursor de puntero al pasar el ratón */
+}
+
+/* Estilo del indicador activo */
+input[type="radio"]:checked + label {
+    background-color: #00aaff; /* Color de fondo del indicador activo */
+}
+
+/* Estilo del texto de visión y misión */
+.vision-text, .mission-text {
+    width: 400px; /* Ancho de las secciones de visión y misión */
+    padding: 60px; /* Relleno */
+    background-color: #124769;/* Fondo gris claro */
+     /* Sombra */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilo de los títulos en visión y misión */
+.vision-text h1, .mission-text h1 {
+    padding-top: 5%; /* Relleno superior */
+    text-align: center; /* Alineación central del texto */
+    font-size: 3rem; /* Tamaño de fuente grande */
+    color: #00aaff; /* Color azul */
+}
+
+/* Estilo de los párrafos en visión y misión */
+.vision-text p, .mission-text p {
+    font-size: 1.2rem; /* Tamaño de fuente */
+    line-height: 1.6; /* Altura de línea */
+}
+.container{
+    color: white;
+    display: flex;
+
+}
+.content{
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    background-color: #5e3369;
+}
+

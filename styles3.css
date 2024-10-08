@@ -1,0 +1,373 @@
+
+/* Estilos generales */
+body {
+    margin: 0; /* Elimina el margen predeterminado alrededor del cuerpo del documento */
+    font-family: 'Roboto', sans-serif; /* Establece la fuente para todo el texto en la página */
+    line-height: 1.6; /* Define la altura de línea para el texto, mejorando la legibilidad */
+    background-color: #f5f7fa; /* Establece un color de fondo suave para la página */
+    color: #333; /* Define un color de texto general que es más suave que el negro puro */
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: rgb(32, 93, 203); /* Aplica un color de fondo azul al encabezado */
+    color: white; /* Establece el color del texto en blanco dentro del encabezado */
+    padding: 15px 20px; /* Añade espacio interno (padding) alrededor del contenido del encabezado */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil debajo del encabezado para dar un efecto de profundidad */
+    display: flex; /* Usa Flexbox para organizar los elementos hijos en una fila */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos hijos, empujándolos a los extremos */
+    align-items: center; /* Alinea verticalmente los elementos en el centro del contenedor */
+}
+
+#superior {
+    font-size: 1.5rem; /* Establece un tamaño de fuente grande para el título */
+    font-weight: bold; /* Aplica un estilo de texto en negrita */
+    margin-left: 10px; /* Añade un pequeño margen a la izquierda del título */
+    display: flex; /* Usa Flexbox para permitir una alineación más precisa dentro de este elemento */
+    align-items: center; /* Alinea el contenido del título verticalmente en el centro */
+}
+
+/* Contenedor para el logo y el título */
+.logo-titulo {
+    display: flex; /* Usa Flexbox para organizar el logo y el título en una fila */
+    align-items: center; /* Alinea verticalmente el logo y el título al centro */
+}
+
+#icono1 {
+    max-width: 50px; /* Limita el ancho máximo del logo a 50px */
+    border-radius: 50%; /* Hace que el logo sea circular */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil alrededor del logo */
+}
+
+/* Estilos del contenedor del menú */
+.navbar {
+    background-color: transparent; /* Hace que el fondo del menú sea transparente */
+}
+
+.navbar ul {
+    list-style-type: none; /* Elimina los puntos de lista predeterminados de los elementos de la lista */
+    margin: 0; /* Elimina cualquier margen predeterminado */
+    padding: 0; /* Elimina cualquier padding predeterminado */
+    display: flex; /* Usa Flexbox para organizar los elementos de la lista en una fila */
+    justify-content: flex-end; /* Alinea los elementos del menú hacia la derecha */
+}
+
+.navbar ul li a {
+    display: block; /* Hace que cada enlace ocupe todo el espacio disponible dentro del elemento de la lista */
+    color: white; /* Establece el color del texto de los enlaces en blanco */
+    text-align: center; /* Centra el texto dentro de cada enlace */
+    padding: 14px 20px; /* Añade espacio interno (padding) alrededor del texto de los enlaces */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Añade una transición suave al cambiar el color de fondo o la transformación */
+}
+
+.navbar ul li a:hover {
+    background-color: white; /* Cambia el color de fondo cuando el cursor pasa sobre el enlace */
+    transform: scale(1.1); /* Agranda ligeramente el enlace cuando se pasa el cursor sobre él */
+    border-radius: 4px; /* Redondea ligeramente las esquinas del enlace */
+    color: black;
+}
+
+.navbar ul li a.active {
+    background-color: #04AA6D; /* Cambia el color de fondo del enlace activo o seleccionado */
+    border-radius: 4px; /* Redondea ligeramente las esquinas del enlace activo */
+}
+.dropbtn {
+    background-color:  rgb(32, 93, 203);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+   
+  }
+  
+  .dropup {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+  }
+  
+  .dropup-content {
+    display: none;
+    position: absolute;
+    background-color:  rgb(32, 93, 203);
+    min-width: 160px;
+    
+  }
+  
+  .dropup-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropup-content a:hover {background-color: #ccc}
+  
+  .dropup:hover .dropup-content {
+    display: block;
+  }
+  
+  .dropup:hover .dropbtn {
+    background-color: #2980B9;
+  }
+
+@media screen and (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column; /* Cambia la disposición de la barra de navegación a columna */
+        width: 100%;
+    }
+
+    .navbar ul li {
+        width: 100%; /* Asegura que cada elemento del menú ocupe todo el ancho disponible */
+    }
+
+    .navbar ul li a {
+        text-align: left; /* Alinea el texto a la izquierda para una mejor presentación en pantallas pequeñas */
+        padding: 10px; /* Ajusta el padding para mejorar la usabilidad en dispositivos móviles */
+    }
+
+    .submenu {
+        position: static; /* Hace que el submenú siga el flujo del documento */
+        width: 100%; /* Asegura que el submenú ocupe todo el ancho disponible */
+        margin-left: 10px; /* Añade un margen izquierdo al submenú para diferenciarlo del elemento principal */
+    }
+}
+
+
+
+/* Estilos para pantallas pequeñas (Responsive) */
+@media screen and (max-width: 600px) { /* Aplica estos estilos solo cuando la pantalla tiene un ancho máximo de 600px */
+    header {
+        flex-direction: column; /* Cambia la dirección de los elementos dentro del encabezado a una columna (uno debajo del otro) */
+        align-items: flex-start; /* Alinea los elementos del encabezado a la izquierda */
+    }
+
+    .navbar ul {
+        justify-content: flex-start; /* Alinea los elementos del menú a la izquierda */
+        width: 100%; /* Hace que el menú ocupe todo el ancho disponible */
+    }
+
+    .navbar ul li {
+        width: 100%; /* Hace que cada elemento de la lista ocupe todo el ancho del menú */
+    }
+
+    .navbar ul li a {
+        text-align: left; /* Alinea el texto de los enlaces a la izquierda */
+        padding: 10px; /* Reduce el padding interno alrededor de los enlaces */
+    }
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding-top: 2%; /* Añade un espacio superior grande al contenido principal */
+    padding-bottom: 8%; /* Añade un espacio inferior grande al contenido principal */
+    max-width: 1200px; /* Limita el ancho máximo del contenido principal a 1200px */
+    margin: 0 auto; /* Centra el contenido principal dentro de la página */
+}
+
+/* Estilos para la disposición de texto e imagen */
+.texto-imagen {
+    display: flex; /* Usa Flexbox para organizar el texto y la imagen en una fila */
+    align-items: center; /* Alinea verticalmente el texto y la imagen al centro */
+    justify-content: space-between; /* Distribuye el espacio entre el texto y la imagen, empujándolos a los extremos */
+    gap: 20px; /* Añade un espacio de 20px entre el texto y la imagen */
+    margin-bottom: 20px; /* Añade un margen inferior al contenedor del texto y la imagen */
+}
+
+.texto-imagen .texto {
+    flex: 1; /* Permite que el texto crezca para ocupar el espacio disponible */
+    max-width: 60%; /* Limita el ancho máximo del texto al 60% del contenedor */
+}
+
+.texto-imagen .image-container {
+    flex: 1; /* Permite que la imagen crezca para ocupar el espacio disponible */
+    max-width: 40%; /* Limita el ancho máximo de la imagen al 40% del contenedor */
+}
+
+.image-container img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen al cambiar su tamaño */
+    max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
+    display: block; /* Elimina el espacio extra debajo de la imagen en algunos navegadores */
+    border-radius: 10px; /* Redondea las esquinas de la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil alrededor de la imagen */
+}
+
+.image-container img:hover {
+    transform: scale(1.05); /* Agranda ligeramente la imagen cuando se pasa el cursor sobre ella */
+    transition: transform 0.3s ease; /* Añade una transición suave al agrandar la imagen */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: rgb(32, 93, 203); /* Establece un color de fondo azul para el pie de página */
+    color: white; /* Establece el color del texto en blanco */
+    text-align: center; /* Centra el texto dentro del pie de página */
+    padding: 5px 0; /* Añade un pequeño padding interno al pie de página */
+    width: 100%; /* Hace que el pie de página ocupe todo el ancho de la página */
+    bottom: 0; /* Fija el pie de página en la parte inferior */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil en la parte superior del pie de página */
+}
+
+/* Estilos responsivos adicionales */
+@media (max-width: 768px) { /* Aplica estos estilos solo cuando la pantalla tiene un ancho máximo de 768px */
+    .texto-imagen {
+        flex-direction: column; /* Cambia la dirección del contenedor de texto e imagen a una columna (uno encima del otro) */
+    }
+
+    nav ul li {
+        display: block; /* Muestra los elementos de la lista del menú como bloques completos (uno debajo del otro) */
+        text-align: center; /* Centra el texto dentro de los elementos del menú */
+        margin: 10px 0; /* Añade un margen vertical entre los elementos del menú */
+    }
+
+    footer {
+        position: relative; /* Permite que el pie de página se coloque de manera
+
+ relativa al contenido, en lugar de estar fijo en la parte inferior */
+    }
+}
+
+.slider {
+    width: 80%;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1; /*Es como activiar el que se tiene seleccionado*/
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    transition: 0.6s;/*La transición al pasar de una imagen a otra*/
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.slide {
+    width: 33.3333%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.caption h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+
+.caption p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s;
+    margin: 0 10px;
+}
+
+.manual-btn:hover {
+    background: #fff;
+}
+
+#radio1:checked ~ .slides {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .slides {
+    margin-left: -100%;
+}
+
+#radio3:checked ~ .slides {
+    margin-left: -200%;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.auto-btn1, .auto-btn2, .auto-btn3 {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s;
+    margin: 0 10px;
+}
+
+@keyframes slide {
+    0% { margin-left: 0; }
+    33% { margin-left: -100%; }
+    66% { margin-left: -200%; }
+    100% { margin-left: 0; }
+}
+
+.slider:hover .navigation-auto {
+    visibility: visible;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    /*margin-right: 30px;*/
+    margin-left: 30px;
+    margin-top: 30px;
+   
+  }
+  th, td {
+    border: 1px solid rgb(148, 231, 231);
+    padding: 10px;
+    text-align: left;
+  }
+
+  td {
+    background-color: #f9faf8;
+  }
+
+  .prueba1  {
+    border-radius: 35px ;
+    border: 10px solid red;
+    width: 50%;
+    margin-left: 40px;
+
+   
+  }
+  
+  
+ 
